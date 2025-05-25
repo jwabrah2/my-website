@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Text & Image Change with Bootstrap</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding-top: 50px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container text-center">
+    <h1 id="heading" class="mb-4">Abd Ullah</h1>
+    <button class="btn btn-primary mb-4" onclick="changeText()">Change Text</button>
+
+    <div class="mt-5">
+      <img id="mainImage" src="1.jpg" alt="Image" class="img-fluid shadow">
+
+      <br><br>
+      <button class="btn btn-success" onclick="changeImage()">Change Image</button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function changeText() {
+      document.getElementById("heading").innerText = "Aljwabrah!";
+    }
+
+   function changeImage() {
+  document.getElementById("mainImage").src = "3.webp";
+}
+
+  </script>
+
+  <!-- Bootstrap JS Bundle (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
